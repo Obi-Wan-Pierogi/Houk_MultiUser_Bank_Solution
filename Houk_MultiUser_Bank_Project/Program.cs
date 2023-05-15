@@ -64,7 +64,7 @@ namespace Houk_MultiUser_Bank
                             decimal amount = 0;
                             if (Bank.balance[currentUser] > 0)
                             {
-                                Console.WriteLine("Please choose from the listed options:");
+                                Console.WriteLine("Welcome " + Bank.user[currentUser] + ", please choose from the listed options:");
                                 Console.WriteLine("1) Make a deposit");
                                 Console.WriteLine("2) Make a withdrawal");
                                 Console.WriteLine("3) Check balance");
