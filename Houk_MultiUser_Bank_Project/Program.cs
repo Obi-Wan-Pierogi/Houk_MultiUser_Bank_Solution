@@ -3,7 +3,7 @@ using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 // Lee Houk
 // IT112
-// NOTES: 
+// NOTES: I originally attempted to do this using a seperate class for Users, however that proved to be difficult in accessing the user data while keeping it in the Bank class. This simplified version was much easier to manage and less stressful.
 // BEHAVIORS NOT IMPLEMENTED AND WHY: None
 
 namespace Houk_MultiUser_Bank
@@ -26,7 +26,7 @@ namespace Houk_MultiUser_Bank
                         
             do
             {
-                Console.WriteLine("Welcome to the bank, please choose from the following options.");
+                Console.WriteLine("Welcome to Lee's Bank. The total funds available is " + Bank.BankBalance.ToString("C") + ". Please choose from the following options.");
                 Console.WriteLine("1) Log in");
                 Console.WriteLine("2) Exit the app");
 
